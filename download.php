@@ -2,8 +2,8 @@
 // Database connection parameters (same as before)
 $host = 'localhost';
 $username = 'root';
-$password = 'Exam@170501';
-$dbname = 'RESUMES';
+$password = 'your password';
+$dbname = 'your dbname';
 
 $conn = new mysqli($host, $username, $password, $dbname);
 
