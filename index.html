@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resume Submission Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        .custom-container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 25px;
+        }
+
+        .custom-card {
+            border: none;
+            font-size: 28px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .custom-card .card-header {
+            background-color: #f8f9fa;
+            border-bottom: none;
+            font-size:32px;
+        }
+
+        .custom-card .card-title {
+            margin-bottom: 0;
+            font-size: 50px;
+        }
+
+        .custom-card .card-body {
+            padding: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5 custom-container">
+        <div class="card custom-card">
+            <div class="card-header">
+                <h5 class="card-title text-center">Resume Submission Form</h5>
+            </div>
+            <div class="card-body">
+                <form action="resumes/submit.php" method="POST" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label for="first_name">First Name:</label>
+                        <input type="text" class="form-control" name="first_name" id="first_name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="last_name">Last Name:</label>
+                        <input type="text" class="form-control" name="last_name" id="last_name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" name="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" class="form-control" name="phone" id="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="date_of_birth">Date of Birth:</label>
+                        <input type="date" class="form-control" name="date_of_birth" id="date_of_birth" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="father_name">Father's Name:</label>
+                        <input type="text" class="form-control" name="father_name" id="father_name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mother_name">Mother's Name:</label>
+                        <input type="text" class="form-control" name="mother_name" id="mother_name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="qualification">Qualification:</label>
+                        <input type="text" class="form-control" name="qualification" id="qualification" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="resume">Upload Resume (PDF only):</label>
+                        <input type="file" class="form-control-file" name="resume" id="resume"  required>
+                    </div>
+                    <button type="submit" class="btn btn-primary bg-dark btn-block" style="font-size:22px; font-weight: bold;">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
